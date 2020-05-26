@@ -6,6 +6,11 @@ package 链表;
  */
 public class _206_反转链表 {
 	
+	/**
+	 * 迭代
+	 * @param head
+	 * @return
+	 */
 	public ListNode reverseList2(ListNode head) {
 		ListNode pre = null;
 		
@@ -17,11 +22,15 @@ public class _206_反转链表 {
 			pre = cur;
 			cur = next;
 		}
-
 		
 		return pre;
     }
 
+	/**
+	 * 递归
+	 * @param head
+	 * @return
+	 */
 	public ListNode reverseList(ListNode head) {
 
 		if (head == null || head.next == null) {
