@@ -12,8 +12,9 @@ public class _206_反转链表 {
 	 * @return
 	 */
 	public ListNode reverseList2(ListNode head) {
+		// pre指针指向当前cur指针的前一个节点
 		ListNode pre = null;
-		
+		// cur指针指向当前节点
 		ListNode cur  = head;
 		
 		while (cur != null) {
